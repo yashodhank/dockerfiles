@@ -51,6 +51,8 @@ ENV PGDATA /data/postgresql
 
 VOLUME /data
 
+EXPOSE 80 443 25 5060 5061 5080 16384-32768 
+
 ADD fusionpbx /etc/nginx/conf.d/default.conf
 ADD start-freeswitch.sh /usr/bin
 ADD start-postgresql.sh /usr/bin
